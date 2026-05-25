@@ -17,7 +17,7 @@ const Navbar = React.memo(() => {
   };
 
   return (
-    <div className="w-full h-16 bg-transparent flex items-center justify-between px-8 z-50">
+    <div className="w-full h-16 bg-transparent flex items-center justify-between px-4 md:px-8 z-50">
       <div className="flex-1" />
       <div className="flex items-center gap-4 relative">
         {user ? (

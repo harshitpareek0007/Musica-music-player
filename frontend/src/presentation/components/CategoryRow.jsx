@@ -48,12 +48,12 @@ const CategoryRow = React.memo(({ title, query, isCircle = false }) => {
 
   return (
     <div className="mt-8" ref={rowRef}>
-      <h2 className="text-2xl font-bold text-white mb-6 px-1">{title}</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 px-1">{title}</h2>
       
-      <div className="flex gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x">
+      <div className="flex gap-4 md:gap-6 overflow-x-auto pb-6 scrollbar-hide snap-x px-1">
         {loading ? (
           [...Array(6)].map((_, i) => (
-            <div key={i} className={`flex-shrink-0 w-48 animate-pulse bg-white/5 p-4 ${isCircle ? 'rounded-full' : 'rounded-2xl'} flex flex-col gap-4`}>
+            <div key={i} className={`flex-shrink-0 w-36 md:w-48 animate-pulse bg-white/5 p-3 md:p-4 ${isCircle ? 'rounded-full' : 'rounded-2xl'} flex flex-col gap-4`}>
               <div className={`w-full aspect-square bg-white/10 ${isCircle ? 'rounded-full' : 'rounded-xl'}`} />
               <div className="h-4 bg-white/10 rounded w-3/4 mx-auto" />
             </div>
@@ -65,10 +65,10 @@ const CategoryRow = React.memo(({ title, query, isCircle = false }) => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className={`flex-shrink-0 w-48 bg-white/5 hover:bg-white/10 p-4 transition-all duration-300 group cursor-pointer border border-transparent hover:border-white/10 shadow-lg backdrop-blur-sm snap-start ${isCircle ? 'rounded-full hover:-translate-y-2' : 'rounded-2xl hover:-translate-y-2'}`}
+              className={`flex-shrink-0 w-36 md:w-48 bg-white/5 hover:bg-white/10 p-3 md:p-4 transition-all duration-300 group cursor-pointer border border-transparent hover:border-white/10 shadow-lg backdrop-blur-sm snap-start ${isCircle ? 'rounded-full hover:-translate-y-2' : 'rounded-2xl hover:-translate-y-2'}`}
               onClick={() => handlePlayTrack(index)}
             >
-              <div className={`relative w-full aspect-square mb-4 overflow-hidden shadow-md ${isCircle ? 'rounded-full border-4 border-transparent group-hover:border-primary' : 'rounded-xl'}`}>
+              <div className={`relative w-full aspect-square mb-3 md:mb-4 overflow-hidden shadow-md ${isCircle ? 'rounded-full border-4 border-transparent group-hover:border-primary' : 'rounded-xl'}`}>
                 <img 
                   src={track.artwork?.['480x480'] || 'https://via.placeholder.com/480'} 
                   alt={track.title}

@@ -118,9 +118,9 @@ const SongPlayerPage = () => {
 
           {/* Info & Action Buttons */}
           <div className="w-full flex items-center justify-between mb-8 px-4">
-            <div className="flex flex-col flex-1 mr-4 overflow-hidden">
-              <h1 className="text-3xl md:text-4xl font-extrabold mb-1 truncate drop-shadow-lg">{currentTrack.title}</h1>
-              <h2 className="text-lg md:text-xl text-light font-medium truncate">{currentTrack.user?.name}</h2>
+            <div className="flex flex-col flex-1 mr-4 overflow-hidden min-w-0">
+              <h1 className="text-3xl md:text-4xl font-extrabold mb-1 truncate drop-shadow-lg" title={currentTrack.title}>{currentTrack.title}</h1>
+              <h2 className="text-lg md:text-xl text-light font-medium truncate" title={currentTrack.user?.name}>{currentTrack.user?.name}</h2>
             </div>
             <div className="flex gap-4 items-center">
               <button className="text-white/60 hover:text-primary transition hover:scale-110"><PlusCircle size={28} /></button>
