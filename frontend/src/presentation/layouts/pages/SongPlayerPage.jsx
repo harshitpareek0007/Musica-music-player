@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Heart, Share2, Shuffle, SkipBack, Play, Pause, SkipForward, Repeat, ListMusic, PlusCircle, MoreHorizontal } from 'lucide-react';
-import usePlayerStore from '../../application/state/usePlayerStore';
-import { musicApi } from '../../infrastructure/api/musicApi';
+import usePlayerStore from '../../../application/state/usePlayerStore';
+import { musicApi } from '../../../infrastructure/api/musicApi';
 
 const SongPlayerPage = () => {
   const { songId } = useParams();

@@ -1,0 +1,1 @@
+import{a as e,i as t}from"./index-DQuH4wXF.js";var n=e(t((e,t)=>({country:`India`,activeCategory:null,theme:`dark`,audioQuality:`high`,autoplay:!0,setCountry:t=>e({country:t}),setActiveCategory:t=>e({activeCategory:t}),setTheme:t=>e({theme:t}),setAudioQuality:t=>e({audioQuality:t}),setAutoplay:t=>e({autoplay:t})}),{name:`musica-settings-storage`}));export{n as t};
