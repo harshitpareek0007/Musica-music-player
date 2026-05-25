@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "1779683699090",
+      "name": "Harsh",
+      "email": "harshitpareek0007@gmail.com",
+      "password": "$2b$10$hUCht/O61NSt9m2aDHOuR.aUWu/ekZpju7hieZuOwq0wVORLRffHS",
+      "likedSongs": [],
+      "history": [],
+      "playlists": []
+    }
+  ],
+  "playlists": []
+}
