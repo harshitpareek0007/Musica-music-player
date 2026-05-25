@@ -4,11 +4,13 @@ const musicRoutes = require('./routes/music');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 
+
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static('./public'));
 
 // Routes
 app.use('/api/music', musicRoutes);
